@@ -1,5 +1,6 @@
 
 import './App.css';
+import Booking from './Components/Booking';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 
@@ -8,7 +9,7 @@ function App() {
     <div className="max-width: 1280px">
       <Navbar></Navbar>
       <Hero></Hero>
-      <h1>Hello Hotel ,, a hotel booking app</h1>
+      <Booking></Booking>
     </div>
   );
 }
