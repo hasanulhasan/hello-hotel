@@ -2,22 +2,23 @@ import { format } from 'date-fns';
 import React, { useState } from 'react';
 import { DayPicker } from 'react-day-picker';
 
-const Booking = () => {
-  const [selected, setSelected] = useState(new Date());
+const Booking = ({ selectedDate, setSelectedDate }) => {
+
+
   return (
     <div className='my-12 container mx-auto'>
-      <div >
+      <div className='my-8'>
         <h2 class="text-center font-medium leading-tight text-5xl">Book Your Room Today</h2>
       </div>
 
-      <div class="grid grid-cols-2 gap-4">
-        <div>
-          <div className='bg-cyan-200 p-6 rounded-lg'>
+      <div class="grid grid-cols-2">
+        <div className='w-1/2 flex justify-end'>
+          <div className='bg-cyan-200 p-6 rounded-lg justify-end'>
             <DayPicker mode="single"
-              selected={selected}
-              onSelect={setSelected} />
+              selected={selectedDate}
+              onSelect={setSelectedDate} />
+            <p className='text-secondary text-center text-xl font-bold'>You have selected {format(selectedDate, 'PP')}</p>
           </div>
-          <p className='text-secondary text-center text-xl font-bold'>You have selected {format(selected, 'PP')}</p>
         </div>
 
         <div>
