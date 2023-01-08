@@ -12,6 +12,7 @@ const BookMain = () => {
       ></Booking>
       <AvailableService
         selectedDate={selectedDate}
+
       ></AvailableService>
     </div>
   );

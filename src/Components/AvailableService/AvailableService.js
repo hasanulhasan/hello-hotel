@@ -1,20 +1,27 @@
 import { useQuery } from '@tanstack/react-query';
 import { format } from 'date-fns';
-import React from 'react';
+import React, { useState } from 'react';
+import Loader from '../Loader';
 import BookingModal from './BookingModal';
 import BookingService from './BookingService';
 
 
 const AvailableService = ({ selectedDate }) => {
+  const [bookInfo, setBookInfo] = useState(null);
+  const date = format(selectedDate, 'PP');
 
   const { data: services = [], refetch, isLoading } = useQuery({
-    queryKey: ['services'],
+    queryKey: ['services', date],
     queryFn: async () => {
-      const res = await fetch(`services.json`)
+      const res = await fetch(`http://localhost:5000/services?date=${date}`)
       const data = await res.json();
       return data
     }
   });
+
+  if (isLoading) {
+    return (<Loader></Loader>)
+  }
 
 
   return (
@@ -22,11 +29,20 @@ const AvailableService = ({ selectedDate }) => {
       <p className='text-secondary text-center text-xl font-bold'>You have selected {format(selectedDate, 'PP')}</p>
       <div className='grid gap-8 my-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         {
-          services.map((service, i) => <BookingService key={service.i} service={service}></BookingService>)
+          services.map(service => <BookingService
+            key={service._id}
+            service={service}
+            setBookInfo={setBookInfo}
+          ></BookingService>)
         }
       </div>
-      {
-        <BookingModal></BookingModal>
+      {bookInfo &&
+        <BookingModal
+          selectedDate={selectedDate}
+          bookInfo={bookInfo}
+          setBookInfo={setBookInfo}
+          refetch={refetch}
+        ></BookingModal>
       }
     </div>
   );

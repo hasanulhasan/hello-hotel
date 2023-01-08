@@ -3,7 +3,7 @@
     "name": "Classic Room",
     "img": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/room-imgs/201511171535329915-6386-a0382cbac31911e992e60a4cef95d023.jpg",
     "price": "700",
-    "slots": [
+    "rooms": [
       "Room 101",
       "Room 202",
       "Room 303",
@@ -15,7 +15,7 @@
     "name": "Grand King",
     "img": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/room-imgs/201511171535329915-24829-a0e9e28ec31911e992840ac254d2bca4.jpg",
     "price": "800",
-    "slots": [
+    "rooms": [
       "Room 101",
       "Room 202",
       "Room 303",
@@ -27,7 +27,7 @@
     "name": "Cascade Triple",
     "img": "https://cdn1.goibibo.com/voy_ing/t_fs/c752bae42a6111e683545ee5da2daa2a.jfif",
     "price": "780",
-    "slots": [
+    "rooms": [
       "Room 101",
       "Room 202",
       "Room 303",
@@ -39,7 +39,7 @@
     "name": "King Triple",
     "img": "https://cdn1.goibibo.com/voy_ing/t_fs/e481620a2a6111e6a5210015c5f4277e.jpg",
     "price": "960",
-    "slots": [
+    "rooms": [
       "Room 101",
       "Room 202",
       "Room 303",
@@ -51,7 +51,7 @@
     "name": "Queen Style",
     "img": "https://www.j-hotel.or.jp/uploads/setouchi-kojima-hotel/room-3114.jpg",
     "price": "730",
-    "slots": [
+    "rooms": [
       "Room 101",
       "Room 202",
       "Room 303",
@@ -63,7 +63,7 @@
     "name": "Hollywood Twin Room",
     "img": "https://www.tokyuhotelsjapan.com/capitol-h/room_deluxeking_hollywoodtwin_images_06.jpg",
     "price": "500",
-    "slots": [
+    "rooms": [
       "Room 101",
       "Room 202",
       "Room 303",
