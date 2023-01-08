@@ -6,8 +6,13 @@ const BookMain = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   return (
     <div>
-      <Booking selectedDate={selectedDate} setSelectedDate={setSelectedDate}></Booking>
-      <AvailableService selectedDate={selectedDate}></AvailableService>
+      <Booking
+        selectedDate={selectedDate}
+        setSelectedDate={setSelectedDate}
+      ></Booking>
+      <AvailableService
+        selectedDate={selectedDate}
+      ></AvailableService>
     </div>
   );
 };

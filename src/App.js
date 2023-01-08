@@ -1,8 +1,7 @@
 
 import './App.css';
-import AvailableService from './Components/AvailableService/AvailableService';
-import Booking from './Components/Booking';
 import BookMain from './Components/BookMain/BookMain';
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 
@@ -12,6 +11,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <BookMain></BookMain>
+      <Footer></Footer>
     </div>
   );
 }

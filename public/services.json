@@ -1,111 +1,74 @@
 [
   {
-    "name": "Teeth Orthodontics",
+    "name": "Classic Room",
+    "img": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/room-imgs/201511171535329915-6386-a0382cbac31911e992e60a4cef95d023.jpg",
+    "price": "700",
     "slots": [
-      "08.00 AM - 08.30 AM",
-      "08.30 AM - 09.00 AM",
-      "09.00 AM - 9.30 AM",
-      "09.30 AM - 10.00 AM",
-      "10.00 AM - 10.30 AM",
-      "10.30 AM - 11.00 AM",
-      "11.00 AM - 11.30 AM",
-      "11.30 AM - 12.00 AM",
-      "1.00 PM - 1.30 PM",
-      "1.30 PM - 2.00 PM",
-      "2.00 PM - 2.30 PM",
-      "2.30 PM - 3.00 PM",
-      "3.00 PM - 3.30 PM",
-      "3.30 PM - 4.00 PM",
-      "4.00 PM - 4.30 PM",
-      "4.30 PM - 5.00 PM"
+      "Room 101",
+      "Room 202",
+      "Room 303",
+      "Room 404",
+      "Room 505"
     ]
   },
   {
-    "name": "Cosmetic Dentistry",
+    "name": "Grand King",
+    "img": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/room-imgs/201511171535329915-24829-a0e9e28ec31911e992840ac254d2bca4.jpg",
+    "price": "800",
     "slots": [
-      "08.00 AM - 08.30 AM",
-      "08.30 AM - 09.00 AM",
-      "09.00 AM - 9.30 AM",
-      "09.30 AM - 10.00 AM",
-      "10.00 AM - 10.30 AM",
-      "10.30 AM - 11.00 AM",
-      "11.00 AM - 11.30 AM",
-      "11.30 AM - 12.00 AM",
-      "1.00 PM - 1.30 PM",
-      "1.30 PM - 2.00 PM",
-      "2.00 PM - 2.30 PM",
-      "2.30 PM - 3.00 PM",
-      "3.00 PM - 3.30 PM",
-      "3.30 PM - 4.00 PM",
-      "4.00 PM - 4.30 PM",
-      "4.30 PM - 5.00 PM"
+      "Room 101",
+      "Room 202",
+      "Room 303",
+      "Room 404",
+      "Room 505"
     ]
   },
   {
-    "name": "Teeth Cleaning",
+    "name": "Cascade Triple",
+    "img": "https://cdn1.goibibo.com/voy_ing/t_fs/c752bae42a6111e683545ee5da2daa2a.jfif",
+    "price": "780",
     "slots": [
-      "08.00 AM - 08.30 AM",
-      "08.30 AM - 09.00 AM",
-      "09.00 AM - 9.30 AM",
-      "09.30 AM - 10.00 AM",
-      "10.00 AM - 10.30 AM",
-      "10.30 AM - 11.00 AM",
-      "11.00 AM - 11.30 AM",
-      "11.30 AM - 12.00 AM",
-      "1.00 PM - 1.30 PM",
-      "1.30 PM - 2.00 PM",
-      "2.00 PM - 2.30 PM",
-      "2.30 PM - 3.00 PM",
-      "3.00 PM - 3.30 PM",
-      "3.30 PM - 4.00 PM",
-      "4.00 PM - 4.30 PM",
-      "4.30 PM - 5.00 PM"
+      "Room 101",
+      "Room 202",
+      "Room 303",
+      "Room 404",
+      "Room 505"
     ]
   },
   {
-    "name": "Cavity Protection",
+    "name": "King Triple",
+    "img": "https://cdn1.goibibo.com/voy_ing/t_fs/e481620a2a6111e6a5210015c5f4277e.jpg",
+    "price": "960",
     "slots": [
-      "08.00 AM - 08.30 AM",
-      "08.30 AM - 09.00 AM",
-      "09.00 AM - 9.30 AM",
-      "09.30 AM - 10.00 AM",
-      "10.00 AM - 10.30 AM",
-      "10.30 AM - 11.00 AM",
-      "11.00 AM - 11.30 AM",
-      "11.30 AM - 12.00 AM",
-      "1.00 PM - 1.30 PM",
-      "1.30 PM - 2.00 PM",
-      "2.00 PM - 2.30 PM",
-      "2.30 PM - 3.00 PM",
-      "3.00 PM - 3.30 PM",
-      "3.30 PM - 4.00 PM",
-      "4.00 PM - 4.30 PM",
-      "4.30 PM - 5.00 PM"
+      "Room 101",
+      "Room 202",
+      "Room 303",
+      "Room 404",
+      "Room 505"
     ]
   },
   {
-    "name": "Pediatric Dental",
-    "slots": []
+    "name": "Queen Style",
+    "img": "https://www.j-hotel.or.jp/uploads/setouchi-kojima-hotel/room-3114.jpg",
+    "price": "730",
+    "slots": [
+      "Room 101",
+      "Room 202",
+      "Room 303",
+      "Room 404",
+      "Room 505"
+    ]
   },
   {
-    "name": "Oral Surgery",
+    "name": "Hollywood Twin Room",
+    "img": "https://www.tokyuhotelsjapan.com/capitol-h/room_deluxeking_hollywoodtwin_images_06.jpg",
+    "price": "500",
     "slots": [
-      "08.00 AM - 08.30 AM",
-      "08.30 AM - 09.00 AM",
-      "09.00 AM - 9.30 AM",
-      "09.30 AM - 10.00 AM",
-      "10.00 AM - 10.30 AM",
-      "10.30 AM - 11.00 AM",
-      "11.00 AM - 11.30 AM",
-      "11.30 AM - 12.00 AM",
-      "1.00 PM - 1.30 PM",
-      "1.30 PM - 2.00 PM",
-      "2.00 PM - 2.30 PM",
-      "2.30 PM - 3.00 PM",
-      "3.00 PM - 3.30 PM",
-      "3.30 PM - 4.00 PM",
-      "4.00 PM - 4.30 PM",
-      "4.30 PM - 5.00 PM"
+      "Room 101",
+      "Room 202",
+      "Room 303",
+      "Room 404",
+      "Room 505"
     ]
   }
 ]
