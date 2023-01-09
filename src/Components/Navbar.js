@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from './AuthProvider/AuthProvider';
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleSignOut = () => {
+    console.log('clicked');
+    logOut()
+      .then(() => { })
+      .catch(err => console.error(err))
+  }
+
   return (
     <div>
       <nav className="
@@ -38,10 +48,22 @@ max-width: 1280px
             </svg>
           </button>
           <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-            <a className="text-xl text-black" href="/about">Hello Hotel</a>
+            <a className="text-xl text-black" href="/">Hello Hotel</a>
             <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
               <li className="nav-item px-2">
-                <a className="nav-link active" aria-current="page" href="/menu">Home</a>
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              </li>
+              <li className="nav-item px-2">
+                {
+                  user?.uid ? <>
+                    <Link className="nav-link active" aria-current="page" onClick={handleSignOut}>Logout</Link>
+                  </>
+                    :
+                    <>
+                      <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+                    </>
+                }
+
               </li>
             </ul>
           </div>

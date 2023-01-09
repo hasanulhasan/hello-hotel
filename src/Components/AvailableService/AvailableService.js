@@ -8,6 +8,7 @@ import BookingService from './BookingService';
 
 const AvailableService = ({ selectedDate }) => {
   const [bookInfo, setBookInfo] = useState(null);
+  // console.log(bookInfo);
   const date = format(selectedDate, 'PP');
 
   const { data: services = [], refetch, isLoading } = useQuery({
@@ -22,7 +23,6 @@ const AvailableService = ({ selectedDate }) => {
   if (isLoading) {
     return (<Loader></Loader>)
   }
-
 
   return (
     <div className='mx-auto w-5/6'>
