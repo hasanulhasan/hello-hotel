@@ -1,12 +1,15 @@
 import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import { AuthContext } from '../Components/AuthProvider/AuthProvider';
 
 const Login = () => {
   const { providerLogin } = useContext(AuthContext);
   const navigate = useNavigate();
   const googleProvider = new GoogleAuthProvider();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/'
 
   const googleButton = () => {
     console.log('clicked');
@@ -14,15 +17,13 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user);
-        // toast('Login successful');
-        navigate("/");
+        swal("Good job!", "Login successful", "success");
+        navigate(from, { replace: true })
       })
       .catch(err => {
         console.error(err);
       })
   }
-
-
 
   return (
     <div>
@@ -37,6 +38,10 @@ const Login = () => {
               />
             </div>
             <div class="md:w-8/12 lg:w-5/12 lg:ml-20">
+              <div className='text-center'>
+                <h2 class="font-medium leading-tight text-5xl">Login</h2>
+                <p className='my-2'>Only Google login is implemented yet</p>
+              </div>
               <form>
                 <div class="mb-6">
                   <input

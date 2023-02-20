@@ -14,7 +14,7 @@ const AvailableService = ({ selectedDate }) => {
   const { data: services = [], refetch, isLoading } = useQuery({
     queryKey: ['services', date],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/services?date=${date}`)
+      const res = await fetch(`https://hello-hotel-server.vercel.app/services?date=${date}`)
       const data = await res.json();
       return data
     }

@@ -13,31 +13,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="
-relative
-w-full
-flex flex-wrap
-items-center
-justify-between
-py-4
-bg-gray-100
-text-gray-500
-hover:text-gray-700
-focus:text-gray-700
-shadow-lg
-navbar navbar-expand-lg navbar-light
-max-width: 1280px
-">
-        <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-          <button className="
-    navbar-toggler
-    text-gray-500
-    border-0
-    hover:shadow-none hover:no-underline
-    py-2
-    px-2.5
-    bg-transparent
-    focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+      <nav className="relative w-full flex flex-wrap items-center justify-between py-4 bg-gray-100 text-gray-500 hover:text-gray-700focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light max-width: 1280px">
+        <div className="container-fluid w-1/2 mx-auto flex flex-wrap items-center justify-between px-6">
+          <button className="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
   " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
@@ -48,10 +26,13 @@ max-width: 1280px
             </svg>
           </button>
           <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-            <a className="text-xl text-black" href="/">Hello Hotel</a>
+            <a className="text-xl text-black font-extrabold" href="/">Hello Hotel</a>
             <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
               <li className="nav-item px-2">
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              </li>
+              <li className="nav-item px-2">
+                <Link className="nav-link active" aria-current="page" to="/booking">Booking</Link>
               </li>
               <li className="nav-item px-2">
                 {
@@ -60,10 +41,9 @@ max-width: 1280px
                   </>
                     :
                     <>
-                      <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+                      <Link className="nav-link active flex" aria-current="page" to="/login">Login</Link>
                     </>
                 }
-
               </li>
             </ul>
           </div>
